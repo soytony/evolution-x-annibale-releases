@@ -1,0 +1,10 @@
+# Release payloads belong in release hosting, not Git history.
+*.zip
+*.img
+*.bin
+*.pem
+*.pk8
+*.key
+*.p12
+*.pfx
+target_files*
