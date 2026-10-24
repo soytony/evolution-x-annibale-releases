@@ -1,54 +1,25 @@
 # Evolution X for Redmi K90 / POCO F8 Pro
 
 Unofficial Evolution X releases for Redmi K90 / POCO F8 Pro
-(codename: `annibale`).
+(codename: annibale).
 
 This project is not affiliated with Xiaomi, POCO, or the Evolution X project.
 
 ## Releases
 
-Published downloads and checksums will be listed on the
+Find downloads, checksums, changelogs, installation instructions, and known
+limitations on the repository's
 [Releases](https://github.com/soytony/evolution-x-annibale-releases/releases) page.
-No release assets have been published yet.
-
-Read the [2026-10-23 installation guide](docs/20261023/README.md) and
-[changelog](CHANGELOG.md) before flashing.
-
-## Current Build
-
-| Field | Value |
-| --- | --- |
-| Version | Evolution X 12.3 Unofficial |
-| Build date | 2026-10-23 |
-| Device | Redmi K90 / POCO F8 Pro (`annibale`) |
-| Android version | 17 |
-| Android security patch | 2026-10-01 |
-| Google services | Included |
-| Stock firmware base | HyperOS `OS3.0.307.0.WPKCNXM`, Android 16, CN |
-| Validation | CN hardware validated with development images; the exact signed release has not been boot tested |
-
-Only CN hardware has been validated. Other variants, including the global
-POCO variant, have not been validated. The installer bundles the required
-stock firmware and flashes it before the Android images.
+Read the documentation for your selected release before flashing.
 
 ## Installation
 
-1. Back up important data and remove Google accounts before installation.
-2. Unlock the bootloader.
-3. Download the fastboot ZIP and verify its published SHA-256 checksum.
-4. Extract the complete bundle and start the phone in bootloader fastboot.
-5. Run `./flash-all.sh` on Linux/macOS or `flash-all.bat` on Windows.
-6. Follow the prompts. After all partitions flash successfully, enter exactly
-   `WIPE_USERDATA` to erase userdata and metadata. Any other response preserves
-   both and continues to reboot.
+1. Back up important data and unlock the bootloader.
+2. Download the fastboot bundle and verify its published SHA-256 checksum.
+3. Extract the complete bundle and follow its installation instructions.
 
-The installer targets Android slot A and replaces the logical partitions.
-The bundled firmware requires stock antirollback version 1; newer or unknown
-versions are rejected. Do not relock the bootloader after installation.
-AVB verification remains disabled.
-
-See the [complete installation guide](docs/20261023/README.md) for compatibility,
-firmware mapping, prerequisites, and installer behavior.
+Compatibility, firmware requirements, and data-wipe behavior are documented
+with each release. Do not relock the bootloader after installing this ROM.
 
 ## Google Apps
 
